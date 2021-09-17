@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: e314a6cd147d6f745919ee2b496820bc
+guid: abcfac3dc074c354ab14fb403bcd6e74
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1434801676565703740
-    second: Power Pellet_0
+      213: 7140029829439992935
+    second: bootnormalred_0
   - first:
-      213: -5713707397234246068
-    second: Power Pellet_1
+      213: -2546222973421691977
+    second: bootnormalred_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Power Pellet_0
+      name: bootnormalred_0
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1152
-        width: 736
-        height: 800
+        x: 3
+        y: 35
+        width: 25
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c39a212a7f861ce0800000000000000
-      internalID: -1434801676565703740
+      spriteID: 764b675ec4b761360800000000000000
+      internalID: 7140029829439992935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Power Pellet_1
+      name: bootnormalred_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 736
-        height: 800
+        x: 8
+        y: 4
+        width: 16
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4eb45d0565d4b0b0800000000000000
-      internalID: -5713707397234246068
+      spriteID: 7bbd24632bff9acd0800000000000000
+      internalID: -2546222973421691977
       vertices: []
       indices: 
       edges: []

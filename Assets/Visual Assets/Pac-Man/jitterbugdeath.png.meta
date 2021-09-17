@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: e314a6cd147d6f745919ee2b496820bc
+guid: f6429deb3e6cd3046925115484c9a5fd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1434801676565703740
-    second: Power Pellet_0
+      213: 799002447633868652
+    second: jitterbugdeath_0
   - first:
-      213: -5713707397234246068
-    second: Power Pellet_1
+      213: 6475362599517902179
+    second: jitterbugdeath_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Power Pellet_0
+      name: jitterbugdeath_0
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1152
-        width: 736
-        height: 800
+        x: 3
+        y: 38
+        width: 27
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c39a212a7f861ce0800000000000000
-      internalID: -1434801676565703740
+      spriteID: c6762e92e70a61b00800000000000000
+      internalID: 799002447633868652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Power Pellet_1
+      name: jitterbugdeath_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 736
-        height: 800
+        x: 3
+        y: 2
+        width: 28
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4eb45d0565d4b0b0800000000000000
-      internalID: -5713707397234246068
+      spriteID: 3655d10f9fb1dd950800000000000000
+      internalID: 6475362599517902179
       vertices: []
       indices: 
       edges: []
