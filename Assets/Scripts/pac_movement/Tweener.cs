@@ -28,18 +28,35 @@ public class Tweener : MonoBehaviour
             if (Vector3.Distance(activeTween.Target.position, activeTween.EndPos) <= 0.1f)
             {
                 activeTween.Target.position = activeTween.EndPos;
+                unsetState(activeTween.Target);
                 activeTween = null;
+                
+
             }
 
         }
         
     }
 
-    public void AddTween(Transform targetObject, Vector3 startPos, Vector3 endPos, float duration) { 
-
+    public void AddTween(Transform targetObject, Vector3 startPos, Vector3 endPos, float duration, string orientation) { 
         if (activeTween == null)
         {
-            activeTween = new Tween( targetObject,  startPos,  endPos, Time.time, duration);
+            setState(targetObject, orientation);
+            activeTween = new Tween( targetObject,  startPos,  endPos, Time.time, duration, orientation);
         }
+    }
+
+    private void setState(Transform targetObject, string orientation)
+    {
+        //set param
+        targetObject.GetComponent<Animator>().SetBool(orientation, true);
+    }
+
+    private void unsetState(Transform targetObject) {
+        //unset all
+        targetObject.GetComponent<Animator>().SetBool("right", false);
+        targetObject.GetComponent<Animator>().SetBool("left", false);
+        targetObject.GetComponent<Animator>().SetBool("up", false);
+        targetObject.GetComponent<Animator>().SetBool("down", false);
     }
 }
