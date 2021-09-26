@@ -19,6 +19,7 @@ public class Tweener : MonoBehaviour
 
             if (Vector3.Distance(activeTween.Target.position, activeTween.EndPos) > 0.1f)
             {
+                setState(activeTween.Target, activeTween.Orientation);
                 float easeInCubic = ((Time.time - activeTween.StartTime) / activeTween.Duration) * ((Time.time - activeTween.StartTime) / activeTween.Duration) * ((Time.time - activeTween.StartTime) / activeTween.Duration);
                 float linearMotion = (Time.time - activeTween.StartTime) / activeTween.Duration;
                 Vector3 interpolation = Vector3.Lerp(activeTween.StartPos, activeTween.EndPos, linearMotion);  
@@ -30,8 +31,6 @@ public class Tweener : MonoBehaviour
                 activeTween.Target.position = activeTween.EndPos;
                 unsetState(activeTween.Target);
                 activeTween = null;
-                
-
             }
 
         }
@@ -41,7 +40,6 @@ public class Tweener : MonoBehaviour
     public void AddTween(Transform targetObject, Vector3 startPos, Vector3 endPos, float duration, string orientation) { 
         if (activeTween == null)
         {
-            setState(targetObject, orientation);
             activeTween = new Tween( targetObject,  startPos,  endPos, Time.time, duration, orientation);
         }
     }

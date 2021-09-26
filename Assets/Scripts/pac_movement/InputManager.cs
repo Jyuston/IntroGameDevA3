@@ -31,22 +31,22 @@ public class InputManager : MonoBehaviour
     {
         if (pacman.transform.position == bottomLeft)
         {
-            tweener.AddTween(pacman.transform, pacman.transform.position, bottomRight, 4.0f, "right");
+            tweener.AddTween(pacman.transform, pacman.transform.position, topLeft, 2.0f, "up");
         }
 
          if (pacman.transform.position == bottomRight)
         {
-            tweener.AddTween(pacman.transform, pacman.transform.position, topRight, 2.0f, "up");
+            tweener.AddTween(pacman.transform, pacman.transform.position, bottomLeft, 4.0f, "left");
         }
 
          if (pacman.transform.position == topRight)
         {
-            tweener.AddTween(pacman.transform, pacman.transform.position, topLeft, 4.0f, "left");
+            tweener.AddTween(pacman.transform, pacman.transform.position, bottomRight, 2.0f, "down");
         }
 
         if (pacman.transform.position == topLeft)
         {
-            tweener.AddTween(pacman.transform, pacman.transform.position, bottomLeft, 2.0f, "down");
+            tweener.AddTween(pacman.transform, pacman.transform.position, topRight, 4.0f, "right");
         }
     }
 
